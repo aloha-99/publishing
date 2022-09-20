@@ -8,7 +8,7 @@ body{
     
 }
 
-header{
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,29 +59,32 @@ header .login_join{
 }
 
 #post{
+    box-sizing: content-box;
     margin: 0 auto;
     padding: 30px 0 0 0;
     width: 50%;
-    height: calc(100vh -62px -180px); /*헤더가 62px이고 메인이 180px입니다*/
+    height: calc(100vh - 350px); 
+    height: calc(100vh - 62px - 180px); 
+    /*헤더가 62px이고 메인이 180px입니다*/
     /* height: 100vh; */
-    
+    /* overflow: auto; */
 }
+
 #post-box{
     width: 100%;
     margin: 0 auto;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     overflow: auto;
     padding: 40px 15px;
-    
+    height: 100%;
 
 }
-
 #post1{
     box-sizing: content-box;
     margin: 20px auto;
     padding: 2px 15px;
     width: 90%;
-    max-height: 100%;
+    /* max-height: 100%; */
     border: 2px solid  rgb(19, 189, 184);
     border-radius: 5px;
 }
